@@ -1,0 +1,222 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    }
+body {
+	background-image: url(images/wallpapers.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+/* design typographique*/
+h1 {
+    text-align: center;
+	color: white;
+	font-size: 50px;
+	margin-left: 2vw;
+}
+h2 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 40px;
+	text-decoration: underline;
+	margin-left: 5vw;
+}
+p{
+	font-family: 'Archivo Black', sans-serif;
+	font-family: 'Lora', serif;
+	font-size: 20px;
+	margin: 20px;
+}
+.menu{
+	color: white;
+	text-decoration: none;
+	margin-right: 30px;
+	padding: 10px;
+}
+.menu:hover{
+	color: black;
+	background-color: white;
+}
+/* Menu */
+header{
+	height: 10vh;
+	width:100vw;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	box-shadow: 0px 0px 2vw rgba(0,0,0,0.5);
+
+	}
+.menuFantome{
+	height: 10vh;
+	width: 100vw;
+}	
+nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+label{
+	font-size: 50px;
+	display: none;
+	margin-right: 30px;
+}
+
+#switch{
+	display: none;
+}
+
+@media (max-width: 600px) {
+	nav{
+		display: none;
+		clear: both;
+	}
+	label{
+		display: block;
+		float: right;
+	}
+	.burger{
+		color: white
+	}
+	/* relier le menu burger au bouton */
+	#switch:checked + nav{
+		display: flex;
+		flex-direction: column;
+	}
+	header{
+		display: block;
+	}
+	h1{
+		float: left;
+		font-size: 30px;
+		margin-top: 15px;
+	}
+	h2{
+		font-size: 25px;
+	}
+	.menu{
+		background-color: black;
+		text-align: center;
+		margin-right: 0px;
+		border-bottom: 2px solid white;
+	}
+}
+/* colonne centrale */
+.Colonnecentrale {
+	width: 90vw;
+	min-height: 80vh;
+	background-color: #778899;
+	margin-left: 5vw;
+	box-shadow: 0px 0px 2vw rgba(0,0,0,0.5)  ;
+}
+@media (max-width: 600px) {
+	.Colonnecentrale{
+		width: 100vw;
+		margin-left: 0vw;
+	}
+}
+
+.Logo {
+	width: 80%;
+	margin-left: 10%;
+}
+
+/* Section 1 */
+.Logo{
+	width:80%;
+	margin-left: 10%;
+	margin-bottom: 30vh;
+	margin-top: 10vh;
+}
+.Histoire-Texte{
+	width: 60%;
+	margin-left: 10%;
+}
+ 
+/* Section 2 */
+
+.personnages {
+	width: 100%;
+	min-height: 80vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* Section 3 */
+.ladescription{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	margin-left: 10vw;
+
+}
+.Jean_description {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5vh;
+}
+.Jeannot{
+	height: 25vh;
+}
+.texte_Jeannot{
+	margin-left: 30px;
+	width: 60%;
+}
+.Amber_description{
+	display: flex;
+	align-items: center;
+	margin-bottom: 5vh;
+}
+.texte_amber{
+	margin-left: 30px;
+	width: 60%;
+}
+.Amberimg{
+	height: 25vh; 
+}
+
+.Lisa_description{
+	display: flex;
+	align-items: center;
+	margin-bottom: 5vh;
+}
+.Lisaimg{
+	height: 25vh;
+}
+.texte_lisa{
+	margin-left: 30px;
+	width: 60%;
+}
+.Kaeya_description{
+	display: flex;
+	align-items: center;
+	margin-bottom: 5vh;
+}
+.Kaeyaimg{
+	height: 25vh;
+}
+.texte_kaeya{
+	margin-left: 30px;
+	width: 60%;
+}
+/*footer*/
+footer{
+	width: 100vw;
+	height: 10vh;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+footer a{
+	color: white;
+	text-decoration: none;
+}
+.footer:hover{
+	color: black;
+	background-color: white ;
+}
